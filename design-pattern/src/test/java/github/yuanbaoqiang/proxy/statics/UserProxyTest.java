@@ -2,8 +2,6 @@ package github.yuanbaoqiang.proxy.statics;
 
 import org.junit.jupiter.api.Test;
 
-import javax.jws.soap.SOAPBinding;
-
 /**
  * @description: 静态代理测试
  * @author: YuanbaoQiang
@@ -13,7 +11,7 @@ public class UserProxyTest {
 
     @Test
     public void save(){
-        UserProxy userProxy = new UserProxy(new UserImpl());
+        UserProxy userProxy = new UserProxy(new UserServiceImpl());
         userProxy.save("name: xxxx, age: xxx...");
     }
 }

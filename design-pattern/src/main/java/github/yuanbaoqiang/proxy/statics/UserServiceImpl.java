@@ -5,7 +5,7 @@ package github.yuanbaoqiang.proxy.statics;
  * @author: YuanbaoQiang
  * @create: 2021-06-21 20:40
  */
-public class UserImpl implements UserService{
+public class UserServiceImpl implements UserService{
     @Override
     public void save(String info) {
         System.out.println("存储用户的信息: " + info);
